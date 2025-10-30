@@ -1320,6 +1320,7 @@ export const Head = () => {
 
       {/* Open Graph */}
       <meta property="og:type" content="website" />
+    <meta name="google-site-verification" content="T5NBd7zteZRnUkSI5Ew89OuIK9Dy7c5NbwOH8H_uwKc" />
       <meta property="og:site_name" content="Chef Chalapathi Rao" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
@@ -1346,4 +1347,5 @@ export const Head = () => {
     </>
   );
 };
+
 
