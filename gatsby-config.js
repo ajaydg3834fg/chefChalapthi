@@ -1,7 +1,7 @@
 // gatsby-config.js
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.chefchalapathirao.com", // TODO: update to your final domain
+    siteUrl: "https://chefchallu.com/", // TODO: update to your final domain
     title:
       "Chef Chalapathi Rao — TEDx Speaker, MasterChef India – Telugu Judge & South Indian Cuisine Expert",
     description:
@@ -37,3 +37,4 @@ module.exports = {
     }
   ]
 };
+
