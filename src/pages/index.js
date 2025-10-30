@@ -619,17 +619,19 @@ const MediaSection = () => {
         <div className="media-block">
           <h4>YouTube</h4>
           <div className="video-grid">
-            {MEDIA.youtube.map((id) => (
-              <div className="embed" key={id}>
-                <iframe
-                  src={`https://www.youtube.com/embed/${id}?rel=0`}
-                  title={`YouTube ${id}`}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                />
-              </div>
-            ))}
-          </div>
+  {MEDIA.youtube.map((id) => (
+    <div className="embed" key={id}>
+      <iframe
+        src={`https://www.youtube-nocookie.com/embed/${id}?rel=0&modestbranding=1&playsinline=1&enablejsapi=1&origin=${typeof window !== 'undefined' ? window.location.origin : ''}`}
+        title={`YouTube ${id}`}
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      />
+    </div>
+  ))}
+</div>
         </div>
 
         {MEDIA.instagram?.length > 0 && (
@@ -1344,3 +1346,4 @@ export const Head = () => {
     </>
   );
 };
+
